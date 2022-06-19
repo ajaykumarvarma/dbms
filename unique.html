@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../allstyle.css">
+    <title>Document</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=kHLM7ioA-vDl2wNKufl5wZ6m_3IwNsInG8EPZJg7Y1pa0kbmmYeR_XeBW2GqqH4EfMmr53dNS9jWsvBpe-tyOw" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kYm1zLmFqYXlrdW1hcnZhcm1hLmluL2dyb3VwYnkuaHRtbA"/><style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+         ::-webkit-scrollbar {
+            width: 0px;
+        }
+body{
+  background-color: #9eabe4;
+  background-image: linear-gradient(315deg, #9eabe4 0%, #77eed8 74%);
+    perspective: 500px;                                  
+}
+        * {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1.55rem;
+}
+h2 {
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+}
+
+/* crops animations that exceeds one line area */
+.line {
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+  
+  margin-bottom: 16px;
+}
+     .pop-outin {
+  animation: 2s anim-popoutin 10;
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: red;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(1.4);
+    opacity: 1;
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: red;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    /* animate nothing to add pause at the end of animation */
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.fromtop {
+  animation: 2s anim-fromtop linear infinite;
+}
+@keyframes anim-fromtop {
+  0% { opacity: 0; transform: translateY(-100%);}
+  25% { opacity: 1; transform: translateY(0%);}
+  50% {
+  }
+  100% {
+  }
+}
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        img{
+            margin: 30px;
+        }
+
+        .img1{
+            width: calc(100% - 500px);
+        }
+       
+
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+            margin: 30px auto 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class='line'>
+    <h1 class='pop-outin'>unique constraint</h1>
+        </div>
+    <div class="container">
+        <img class="img1" src="unique.PNG" alt="create-01">
+        
+    </div>
+</body>
+</html>
