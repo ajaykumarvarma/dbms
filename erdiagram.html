@@ -95,22 +95,32 @@ h2 {
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
-        img{
-            margin: 30px;
-        }
-
-        .img1{
-            width: calc(100% - 500px);
-        }
-        .img2{
-            width: calc(100% - 100px);
-        }
+       
 
         h1{
             text-transform: uppercase;
             text-align: center;
             margin: 30px auto 10px;
         }
+       .repeating-linear {
+  color: pink;
+  border: 10px solid pink;
+  border-image: repeating-linear-gradient( 45deg, pink, pink 1%, purple 1%, purple 8%) 10;
+}
+.repeating-linear:hover {
+  border-image: repeating-linear-gradient( 45deg, purple, purple 1%, pink 1%, pink 8%) 10;
+  color: purple;
+}
+/* styling for Pen, unrelated to border-image */
+
+* {
+  box-sizing: border-box;
+}
+      body{
+  background-color: #9eabe4;
+  background-image: linear-gradient(315deg, #9eabe4 0%, #77eed8 74%);
+                                      
+}
     </style>
 </head>
 <body>
@@ -118,7 +128,9 @@ h2 {
     <h1 class='pop-outin'>ER DIAGRAM</h1>
         </div>
     <div class="container">
-        <img class="img1" src="erdiagram.jpg" alt="create-01">
+        <center>
+        <img class="repeating-linear" src="erdiagram.jpg" alt="create-01">
+        </center>    
         
     </div>
 </body>
